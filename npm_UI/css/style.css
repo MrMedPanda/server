@@ -1,0 +1,76 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 106, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    color: black;
+    display: block;
+    background-color: gray;
+    width: max-content;
+}
+
+.set {
+    width: 100px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
+    border: 1px solid;
+    transition: 0.3s all;
+}
+
+.footer {
+    width: 100%;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.find {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3px 0;
+}
+
+.sort_block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3px 0;
+}
+
+.sort {
+    width: 150px;
+}
+
+.find_inp {
+    width: 300px;
+}
+
+.content {
+    width: 100%;
+}
+
+.dell_bth:hover {
+    background-color: rgb(255, 106, 0);
+    transition: 0.3s all;
+    border-color: rgb(255, 106, 0);
+}
