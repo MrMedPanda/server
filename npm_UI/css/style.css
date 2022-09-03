@@ -36,6 +36,26 @@ div {
     transition: 0.3s all;
 }
 
+.top_list {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
+    transition: 0.3s all;
+}
+
+
+
+.list>p {
+    text-align: start;
+    width: 100%;
+}
+
+.list .end {
+    text-align: center;
+}
+
+
 .footer {
     width: 100%;
     margin: 10px 0 0 0;

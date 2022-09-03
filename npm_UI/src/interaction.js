@@ -10,7 +10,7 @@ function addInp() {
 
 function addSeak() {
     return `<div class="find">
-                <input type="text" class="find_inp" id="search_name" placeholder="Name">
+                <input type="text" class="find_inp" id="search_name" placeholder="Surname">
                 <button id="ex">X</button>
             </div>`
 }

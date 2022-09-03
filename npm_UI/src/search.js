@@ -1,6 +1,6 @@
 export default function findHuman(data) {
     const fName = document.querySelector('#search_name').value;
-    return fName === '' ? data : data.filter(({ name }) => !name.search(fName));
+    return fName === '' ? data : data.filter(({ surname }) => !surname.toLowerCase().search(fName));
 }
 
 function sortHuman(data) {
