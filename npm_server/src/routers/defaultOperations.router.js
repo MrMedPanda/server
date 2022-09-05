@@ -21,4 +21,12 @@ router.post('/update-people-list', (req, res) => {
     console.log('Updating successfully');
 });
 
+router.post('/add-human', (req, res) => {
+    people.addHuman(req.body);
+    res.json({
+        data: people.list
+    });
+    console.log('Updating successfully');
+});
+
 export default router;
