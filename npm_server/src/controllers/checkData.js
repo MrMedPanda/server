@@ -1,5 +1,3 @@
-import people from "../data/people.js";
-
 export default function checkData(data, checkType = 'none') {
     if (checkType === 'none' || checkType === 'people-list') {
         if (data instanceof Array) {
@@ -11,7 +9,7 @@ export default function checkData(data, checkType = 'none') {
 
     } else if (checkType === 'human') {
         if (data instanceof Object) {
-            return checkObjContent(data, people.list, 1);
+            return checkObjContent(data, import('../data/people.js'), 1);
         }
         return false;
 
