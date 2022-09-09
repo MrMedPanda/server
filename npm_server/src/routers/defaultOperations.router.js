@@ -1,6 +1,7 @@
 import { Router } from "express";
 import people from "../data/people.js";
-import checkData from "../controllers/checkData.js";
+import addHuman from "../controllers/addHuman.js";
+import updatePeopleList from "../controllers/updatePeopleList.js";
 
 const router = Router();
 
@@ -14,39 +15,8 @@ router.get('/get-people/:id', (req, res) => {
     console.log('Human info has been sent!');
 });
 
-router.post('/update-people-list', (req, res) => {
-    if (checkData(req.body)) {
-        people.changeList(req.body);
-        res.json({
-            data: people.list
-        });
-        console.log('Updating successfully');
+router.post('/update-people-list', updatePeopleList);
 
-    } else {
-        res.json({
-            message: 'Bad data!',
-            data: people.list
-
-        });
-        console.log('Updating failed! Bad data.');
-    }
-});
-
-router.post('/add-human', (req, res) => {
-    if (checkData(req.body, 'human')) {
-        people.addHuman(req.body);
-        res.json({
-            data: people.list
-        });
-        console.log('Updating successfully');
-    } else {
-        res.json({
-            message: 'Bad data!',
-            data: people.list
-
-        });
-        console.log('Adding failed! Bad data.');
-    }
-});
+router.post('/add-human', addHuman);
 
 export default router;
