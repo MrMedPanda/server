@@ -9,7 +9,7 @@ export default function checkData(data, checkType = 'none') {
 
     } else if (checkType === 'human') {
         if (data instanceof Object) {
-            return checkObjContent(data, import('../data/people.js'), 1);
+            return checkObjContent(data, import('../data/people.js').list, 1);
         }
         return false;
 
