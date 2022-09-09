@@ -1,4 +1,5 @@
 import checkData from "../controllers/checkData.js";
+import people from '../data/people.js';
 
 export default function addHuman(req, res) {
     if (checkData(req.body, 'human')) {
