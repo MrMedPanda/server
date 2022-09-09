@@ -14,5 +14,5 @@ localhost:3000/add-human - post request to add a new person's data to the list
     surname: 'Oziava', 
     salary: '1000', 
     promotion: false, 
-    id: 0 
+    id: '0' 
 }
