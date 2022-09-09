@@ -10,11 +10,6 @@ router.get('/get-people', (req, res) => {
     console.log('People list has been sent!');
 });
 
-router.get('/get-people/:id', (req, res) => {
-    res.send(people.list[req.params.id]);
-    console.log('Human info has been sent!');
-});
-
 router.post('/update-people-list', updatePeopleList);
 
 router.post('/add-human', addHuman);
