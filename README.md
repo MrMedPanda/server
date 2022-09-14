@@ -1,18 +1,11 @@
-# server scripts
-npm start - command to start a server
-npm run server - command to start server whit nodemon (for developing)
+# react-todo-api
 
-# url for fetch requests
-localhost:3000/get-people - get request for a complete list of people
-localhost:3000/get-people/:id - get request for data of a specific person
-localhost:3000/update-people-list - post request to replace the old list with the new one
-localhost:3000/add-human - post request to add a new person's data to the list
+# server commands
+npm start - start server
+npm run dev - start server with nodemon (for developing)
 
-# human data object template
-{ 
-    name: 'Oleg', 
-    surname: 'Oziava', 
-    salary: '1000', 
-    promotion: false, 
-    id: '0' 
-}
+# links for interacting with the server
+localhost:3000/todos - get a todos list
+localhost:3000/add-todo - add a todo item
+localhost:3000/todos/:id - get a todo item
+localhost:3000/rem-todo - remove the todo item
