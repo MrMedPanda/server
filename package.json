@@ -1,6 +1,9 @@
 {
   "name": "react-todo-api",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.15.1"
+  },
   "description": "server to work with the toto list",
   "main": "./src/app.js",
   "type": "module",
